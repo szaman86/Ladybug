@@ -28,8 +28,9 @@ header{float: left; padding-top: 10px;}
 
 .logo{display: inline-block; text-decoration: none;}
 .logo .txt1{font-family: 'Great Vibes'; font-size: 40px; line-height: 40px; color: #FF0074;}
+img.logo {width: 400px; height: 120px}
 
-.phone1{text-align: right; float: right;color: #FF0074;}
+.phone1{padding-top: 3%; text-align: right; float: right;color: #FF0074;}
 .phone1 .txt1{font-size: 12px; line-height: 16px; text-transform: uppercase; letter-spacing: 1px;}
 .phone1 .txt2{font-family: 'Great Vibes'; font-size: 36px; line-height: 36px;}
 
@@ -55,7 +56,7 @@ header{float: left; padding-top: 10px;}
 
 .splash_inner{padding: 0px;}
 
-.slogan1{text-align: center; color: #83527e; padding-top: 30px; padding-bottom: 25px;}
+.slogan1{text-align: center; color: #564356; padding-top: 30px; padding-bottom: 25px;}
 .slogan1 .txt1{font-family: 'Great Vibes'; font-size: 48px; line-height: 48px;}
 .slogan1 .txt2{font-family: 'Cinzel'; font-weight: 700; font-size: 20px; line-height: 20px; letter-spacing: 5px; text-transform: uppercase; padding-top: 15px;}
 
@@ -119,7 +120,7 @@ header{float: left; padding-top: 10px;}
 .banner{}
 .banner .banner_inner{padding-top: 5px;}
 .banner .banner_bot{height: 26px; background: url(../images/kand2.png) center top no-repeat;}
-.banner .banner_inner a{display: block; text-decoration: none; position: relative; background: #fff; padding: 20px; text-align: left; border-top: none; box-shadow: 5px 5px 10px rgba(85, 66, 85, 0.32); moz-box-shadow: 5px 5px 10px rgba(85, 66, 85, 0.32); -webkit-box-shadow: 5px 5px 10px rgba(85, 66, 85, 0.32);
+.banner .banner_inner a{display: block; text-decoration: none; position: relative; background: #d9d7d7; padding: 20px; text-align: left; border-top: none; box-shadow: 5px 5px 10px rgba(85, 66, 85, 0.32); moz-box-shadow: 5px 5px 10px rgba(85, 66, 85, 0.32); -webkit-box-shadow: 5px 5px 10px rgba(85, 66, 85, 0.32);
                         transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -webkit-transition: all 0.3s ease-out; -o-transition: all 0.3s ease-out;
 }
 .banner .banner_inner a:hover{ background: #fff; }
@@ -247,7 +248,7 @@ footer{position: relative; z-index: 1; }
 .navbar_ .btn-navbar .icon-bar{background-image: none;}
 .nav-collapse_.collapse{ position:relative; display:block; text-align: center;}
 .navbar_ .nav{ position: relative; float: none; margin: 0; padding: 0; display: block; left: auto;}
-.navbar_ .nav > li{position: relative; display: block; float: none; padding: 10px 0 0px 0; white-space: nowrap; background: url(../images/marker0.png) center top no-repeat;}
+.navbar_ .nav > li{font-size: 1.8em; position: relative; display: block; float: none; padding: 10px 0 0px 0; white-space: nowrap; background: url(../images/marker0.png) center top no-repeat;}
 .navbar_ .nav > li:first-child{background: none;}
 .navbar_ .nav > li > a{display: block; text-decoration: none; background: none; font-family: 'Cinzel'; font-weight: 400; font-size: 16px; line-height: 20px; color: #FF0074; text-shadow:none; padding: 10px 0; border: none; margin: 0; border-radius:0px; -moz-border-radius:0px; -webkit-border-radius:0px; letter-spacing: 4px;}
 .navbar_ .nav > li > a:hover, .navbar_ .nav > li > a:focus, .navbar_ .nav > li.sfHover > a, .navbar_ .nav > li.sfHover > a:hover{color: #554255; text-decoration: none; background: none;  box-shadow: none; moz-box-shadow: none; -webkit-box-shadow: none; font-size: 20px; letter-spacing: 2px;}
