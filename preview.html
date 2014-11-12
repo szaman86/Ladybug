@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>PREVIEW</title>
+<meta charset="utf-8">
+
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script src="http://api.jquery.com/resources/events.js"></script>
+
+<script type="text/javascript">
+//function to fix height of iframe!
+var calcHeight = function() {
+var headerDimensions = $('#headerlivedemo').height();
+var selector = '#iframelive';
+ $(selector).height($(window).height() - headerDimensions);
+}
+
+$(document).ready(function() {
+calcHeight();
+});
+$(window).resize(function() {
+	calcHeight();
+}).load(function() {
+	calcHeight();
+});
+
+
+
+
+
+$(document).ready(function() {
+	var anim = function(w) {
+		//$('#frame').css('width', w+'px');
+		$('#frame').stop().animate({'width': w+'px'},1000);
+
+	}
+
+	$('.paginations li').click(function () {
+    $('.paginations li').removeClass('active');
+    $(this).addClass('active');
+    var tola = $(this).attr('data');
+    //console.log( tola );
+    anim(tola);
+
+
+	});
+
+	//anim("1199");
+	//anim("1280");
+	anim("997");
+
+	$(window).keypress(function(event) {
+	  //if ( event.which == 49 ) { anim("480"); }
+	  //if ( event.which == 50 ) { anim("767"); }
+	  //if ( event.which == 51 ) { anim("979"); }
+	  //if ( event.which == 52 ) { anim("1199"); }
+	  //if ( event.which == 53 ) { anim("1280"); }
+
+	});
+
+
+});  ////////
+
+
+
+
+</script>
+</head>
+<style type="text/css">
+
+	html {height:100%;}
+
+	body {height:100%; margin: 0; padding: 0; position: relative; overflow: hidden;}
+
+	#headerlivedemo{position: relative; background: green; text-align: center; min-height: 50px;}
+
+	ul{padding: 0; margin: 0; list-style: none;}
+
+	.paginations{ display: inline-block;}
+	.paginations li{display: inline-block; line-height: 50px; padding: 0 30px;}
+
+
+	a{color: #fff;}
+
+	iframe, #iframelive { width: 100%; margin: 0 auto;}
+
+	#frame { position: relative; height: 100%; display: block; width: 997px; /*margin: 0 auto;*/ }
+
+	#frameWrapper { background: none repeat scroll 0 0 transparent; height: 100%; margin: 0;}
+
+
+
+
+
+
+</style>
+<body id="livedemo">
+<div id="headerlivedemo">
+	<ul class="paginations">
+		<li clasas="nav1" data="337"><a href="javascript:;">320-480</a></li>
+		<li clasas="nav2" data="498"><a href="javascript:;">481-767</a></li>
+		<li clasas="nav3" data="785"><a href="javascript:;">768-979</a></li>
+		<li clasas="nav4" data="997"><a href="javascript:;">980-1199</a></li>
+		<li clasas="nav5" data="1217"><a href="javascript:;">1200</a></li>
+		<li clasas="nav6" data="1280"><a href="javascript:;">1280 - full screen</a></li>
+	</ul>
+</div>
+<div id="iframelive" class="">
+  <div id="frameWrapper">
+   	<iframe id="frame" frameborder="0" src="404.html"></iframe>
+  </div>
+</div>
+</body>
+</html>
+
