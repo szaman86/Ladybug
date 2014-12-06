@@ -256,6 +256,12 @@ a:focus {
      -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
           box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
+#ania {
+    width: 10em;
+}
+#joanna {
+    width: 10em;
+}
 
 .img-circle {
   -webkit-border-radius: 500px;
